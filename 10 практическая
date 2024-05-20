@@ -1,0 +1,15 @@
+num=input("Число")
+while True:
+    try:
+        x=int(num)
+        if x >0:
+            for i in range(x+1):
+                print(i,end='')
+                print()
+            break
+        else:
+            print("число должно быть положительным")
+    except ValueError:
+        print("это не число . попробуй еще раз")
+        num=input("Число")
+
