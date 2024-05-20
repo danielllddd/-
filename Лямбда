@@ -1,0 +1,15 @@
+Задание 1
+x = lambda a,b: a*b
+print(x(3, 2))
+выходные данные
+ 
+Задание 2
+Vodd = int(input('Колличество чисел: '))
+spisok = []
+for i in range(Vodd):
+    num = int(input())
+    spisok.append(num)
+res = list(filter(lambda x: x % 3 == 0 and x % 5 == 0, spisok))
+print(res)
+Выходные данные
+ 
