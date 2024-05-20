@@ -1,0 +1,21 @@
+import time
+while True:
+    try:
+        seconds = int(input("Введите количество секунд для таймера: "))
+        if seconds <= 0:
+            print("Введите число больше 0")
+        else:
+            break
+    except ValueError:
+        print("Введите целое число")
+
+while seconds > 0:
+        print(f"Осталось {seconds} секунд")
+        if seconds == 10:
+            print("Осталось мало времени!")
+
+        time.sleep(1)
+        seconds -= 1
+    
+print("Время вышло.")
+
