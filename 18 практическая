@@ -1,0 +1,32 @@
+Функция умножает два числа 
+def multiplay_numbers(num1, num2):
+    return num1*num2
+result = multiplay_numbers(5, 3)
+print(result)
+
+Эта функция переворачивает сроку
+def reverse_string(input_str):
+    return input_str[::-1]
+reverse_str = reverse_string("Hello")
+print(reverse_str)
+
+Эта фунцкия суммирует все элементы в списке
+def get_list_sum(input_list):
+    total = 0
+    for num in input_list:
+        total+= num 
+    return total
+
+Эта функция возвращает значение по ключу словаря 
+def get_dict_value(dictionary, key):
+    if key in dictionary:
+        return dictionary[key]
+    else:
+        return "Key not found"
+    
+
+Эта функция находит общие элементы между двумя множествами или кортежами
+def common_elements(set1, set2):
+    return set1.intersection(set2)
+
+
