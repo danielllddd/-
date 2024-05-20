@@ -1,0 +1,34 @@
+import random
+money = random.randint(0, 120)
+def shop():
+    global money
+    print("У Вовы сегодня", money, "рублей")
+    t1 = "вода - 20 рублей"
+    t2 = "шоколадка - 40 рублей"
+    t3 = "сок - 60 рублей"
+
+    while money > 0:
+        print("Доступные товары:")
+        print(t1)
+        print(t2)
+        print(t3)
+
+        choice = input("Какой товар вы хотите купить?")
+        if choice == "вода" and money >= 20:
+            money -= 20
+            print("Вы купили воду")
+        elif choice == "шоколадка" and money >=40:
+            money -=40
+            print("Вы купили шоколадку")
+        elif choice == "сок" and money >= 60:
+            money -=60
+            print("Вы купили сок")
+        else:
+            print(" У вас не хватает денег или такого товара в магазине нет ")
+            break
+        answer = input("Хотите продолжить покупки? (да/нет)")
+        if answer != "да":
+            break
+    print("У Вовы осталось", money, "рублей")
+shop()
+
