@@ -1,0 +1,118 @@
+Задание 1
+import turtle
+t = turtle
+while True:
+    t.speed(000)
+    t.forward(150)
+    t.left(90)
+
+
+
+2
+import turtle
+t = turtle.Turtle()
+t.speed(10)
+t.goto(0,0)
+t.goto(50 , 0)
+t.goto(50 , 90)
+t.goto(0,0)
+turtle.done()
+3
+import turtle
+t = turtle.Turtle()
+t.speed(10)
+turtle.bgcolor('orange')
+t.circle(80)
+turtle.done()
+4
+from turtle import *
+a = 170
+b = 90
+for i in ('yellow','black'):
+    color(i)
+    circle(a, 45)
+    circle(b, 90)
+    circle(a, 90)
+    circle(b, 90)
+    circle(a, 45)
+turtle.done()
+ 5 
+import turtle
+t = turtle.Turtle()
+t.speed(10)
+t.begin_fill()
+t.fillcolor("red")
+t.penup()
+t.goto( 30 , 0)
+t.pendown()
+for i in range(5):
+    t.forward(200)
+    t.right(144)
+t.end_fill()
+turtle.done()
+6
+
+import turtle
+colors = ['red' , 'green' , 'blue' , 'orange' , 'purple' , 'yellow']
+t = turtle.Turtle()
+t.speed(0)
+for i in range(15):
+    color = colors[i % len(colors)]
+    t.pencolor(color)
+    t.circle(50)
+    t.penup()
+    t.right(30)
+    t.pendown()
+
+turtle.done()
+
+7
+ 
+
+8
+ 
+9
+ 
+10
+ 
+11
+1.	import turtle
+t = turtle
+for a in range (0, 4):
+    i = ['blue', 'green', 'red', 'orange']
+    color = i [a % len(i)]
+    t.color(color)
+    t.begin_fill()
+    t.circle(80, 360)
+    t.end_fill()
+t.done()
+
+
+12
+import turtle
+t = turtle.Turtle()
+back = turtle.Screen()
+txt = back.textinput('Выберите направление:', 'w, a, s, d')
+t.left(90)
+count = 0
+while txt != 'exit':
+    txt = back.textinput('Выберите направление:', 'w, a, s, d')
+    txt1 = back.numinput('Количество шагов:', 'Введите величину:')
+    if txt == 'w':
+        t.forward(txt1)
+    if txt == 'a':
+        t.left(90)
+        t.forward(txt1)
+    if txt == 's':
+        t.left(180)
+        t.forward(txt1)
+    if txt == 'd':
+        t.right(90)
+        t.forward(txt1)
+        count += txt1
+    if txt == 'exit':
+        break
+        print(count)
+turtle.done()
+
+13
